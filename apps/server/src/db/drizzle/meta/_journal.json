@@ -8,6 +8,13 @@
       "when": 1776325078852,
       "tag": "0000_heavy_dust",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1776347530297,
+      "tag": "0001_whole_magdalene",
+      "breakpoints": true
     }
   ]
 }

@@ -24,12 +24,14 @@ app.use(
 );
 
 const routes = app
-  .basePath("/")
+  // api version
+  .basePath("/v1")
   .get("/", async (c) => {
     const allEmails = await db.select().from(emails);
     console.log("Getting all allEmails from the database: ", allEmails);
     return c.json(allEmails);
   })
+  // mount better-auth handlers
   .on(["POST", "GET"], "/api/auth/*", (c) => {
     return auth.handler(c.req.raw);
   })
