@@ -1,5 +1,8 @@
-import app from "../index";
+import { auth } from "./auth";
 
-type AppType = typeof app;
-
-export default AppType;
+export type HonoEnv = {
+  Variables: {
+    user: typeof auth.$Infer.Session.user | null;
+    session: typeof auth.$Infer.Session.session | null;
+  };
+};

@@ -43,5 +43,6 @@ build
 
 # Others
 .env*.local
+.env
 .vercel
 next-env.d.ts
