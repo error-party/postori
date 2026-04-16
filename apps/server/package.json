@@ -16,7 +16,8 @@
     "drizzle-orm": "^0.45.2",
     "hono": "^4.8.9",
     "nodemailer": "^6.9.12",
-    "pg": "^8.20.0"
+    "pg": "^8.20.0",
+    "better-auth": "^1.5.6"
   },
   "devDependencies": {
     "@types/bun": "latest",
